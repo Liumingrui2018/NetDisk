@@ -211,15 +211,15 @@ public class FileHandlerServlet extends HttpServlet {
 		Path rootPath = Paths.get(filesRoot);
 		if (!Files.exists(rootPath, LinkOption.NOFOLLOW_LINKS)) {
 			try {
-				if (Files.isDirectory(rootPath, LinkOption.NOFOLLOW_LINKS))
-					Files.createDirectories(rootPath);
-				else {
-					throw new ServletException("指定的所有用户目录的父目录不是目录：" + rootPath);
-				}
+				Files.createDirectories(rootPath);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}else {
+			if(!Files.isDirectory(rootPath, LinkOption.NOFOLLOW_LINKS)) {
+				throw new ServletException("指定的存储用户数据的目录不是目录："+rootPath);
+			}//注：当指定的数据目录不是一个目录时，不应该去删除这个文件并创建目录，而是应该抛出异常来提醒开发者重新配置数据目录。
 		}
 	}
 
