@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+div.middle{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-175px;
+	margin-top:-100px;
+	padding:10px;
+	width:350px;
+	height:200px;
+	border: 2px solid #aaa;
+	line-height:50px;
+}
+form{
+	font-size:1.2em;
+	text-align:center;
+}
+form table{
+	margin:0 auto;
+	text-align:left;
+}
+form button{
+	width:50%;
+	height:40px;
+	background:#30F;
+	border:0;
+	border-radius:10px;
+	color:#fff;
+	font-size:1em;
+}
+form table input{
+	margin-left:20px;
+	height:30px;
+	border:1px solid #00F;
+}
+.errorField {
+	color: #F00;
+}
+em{
+	color:#f00;
+}

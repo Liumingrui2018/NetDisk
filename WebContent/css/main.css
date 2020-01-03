@@ -1,0 +1,180 @@
+/* CSS Document */
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ 鍏冪礌/鏍囩閫夋嫨鍣� ~~ */
+ul, ol, dl { /* 鐢变簬娴忚鍣ㄤ箣闂寸殑宸紓锛屾渶浣冲仛娉曟槸鍦ㄥ垪琛ㄤ腑灏嗗～鍏呭拰杈硅窛閮借缃负闆躲�備负浜嗕繚鎸佷竴鑷达紝鎮ㄥ彲浠ュ湪姝ゅ鎸囧畾闇�瑕佺殑鏁板�硷紝涔熷彲浠ュ湪鍒楄〃鎵�鍖呭惈鐨勫垪琛ㄩ」锛圠I銆丏T 鍜� DD锛変腑鎸囧畾闇�瑕佺殑鏁板�笺�傝娉ㄦ剰锛岄櫎闈炵紪鍐欎竴涓洿涓哄叿浣撶殑閫夋嫨鍣紝鍚﹀垯鎮ㄥ湪姝ゅ杩涜鐨勮缃皢浼氬眰鍙犲埌 .nav 鍒楄〃銆� */
+	padding: 0;
+	margin: 0;
+}
+.content div.dirItem {
+	background-color: rgba(255,255,255,0.7);
+	float: left;
+	width: 10em;
+	height: 100px;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.content div.dirItem.selected{
+	background-color: rgba(0,0,255,0.5);
+}
+.content div.dirItem p{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.content div.dirItem img{
+	height:50px;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 鍒犻櫎涓婅竟璺濆彲浠ヨВ鍐宠竟璺濅細瓒呭嚭鍏跺寘鍚殑 div 鐨勯棶棰樸�傚墿浣欑殑涓嬭竟璺濆彲浠ヤ娇 div 涓庡悗闈㈢殑浠讳綍鍏冪礌淇濇寔涓�瀹氳窛绂汇�� */
+	padding-right: 15px;
+	padding-left: 15px; /* 鍚� div 鍐呯殑鍏冪礌渚ц竟锛堣�屼笉鏄� div 鑷韩锛夋坊鍔犲～鍏呭彲閬垮厤浣跨敤浠讳綍鏂规妯″瀷鏁板銆傛澶栵紝涔熷彲灏嗗叿鏈変晶杈瑰～鍏呯殑宓屽 div 鐢ㄤ綔鏇夸唬鏂规硶銆� */
+}
+a img { /* 姝ら�夋嫨鍣ㄥ皢鍒犻櫎鏌愪簺娴忚鍣ㄤ腑鏄剧ず鍦ㄥ浘鍍忓懆鍥寸殑榛樿钃濊壊杈规锛堝綋璇ュ浘鍍忓寘鍚湪閾炬帴涓椂锛� */
+	border: none;
+}
+
+/* ~~ 绔欑偣閾炬帴鐨勬牱寮忓繀椤讳繚鎸佹椤哄簭锛屽寘鎷敤浜庡垱寤烘偓鍋滄晥鏋滅殑閫夋嫨鍣ㄧ粍鍦ㄥ唴銆� ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* 闄ら潪灏嗛摼鎺ヨ缃垚鏋佷负鐙壒鐨勫瑙傛牱寮忥紝鍚﹀垯鏈�濂芥彁渚涗笅鍒掔嚎锛屼互渚垮彲浠庤瑙変笂蹇�熻瘑鍒� */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* 姝ょ粍閫夋嫨鍣ㄥ皢涓洪敭鐩樺鑸�呮彁渚涗笌榧犳爣浣跨敤鑰呯浉鍚岀殑鎮仠浣撻獙銆� */
+	text-decoration: none;
+}
+
+/* ~~ 姝ゅ浐瀹氬搴﹀鍣ㄥ寘鍚墍鏈夊叾瀹� div ~~ */
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+
+/* ~~ 鏍囬鏈寚瀹氬搴︺�傚畠灏嗘墿灞曞埌甯冨眬鐨勫畬鏁村搴︺�傛爣棰樺寘鍚竴涓浘鍍忓崰浣嶇锛岃鍗犱綅绗﹀簲鏇挎崲涓烘偍鑷繁鐨勯摼鎺ュ窘鏍囥�� ~~ */
+.header {
+	background-color: #ADB96E;
+	color:white;
+}
+
+/* ~~ 浠ヤ笅鏄甯冨眬鐨勫垪銆� ~~ 
+
+1) 濉厖鍙細鏀剧疆浜� div 鐨勯《閮ㄥ拰/鎴栧簳閮ㄣ�傛 div 涓殑鍏冪礌渚ц竟浼氭湁濉厖銆傝繖鏍凤紝鎮ㄥ彲浠ラ伩鍏嶄娇鐢ㄤ换浣曗�滄柟妗嗘ā鍨嬫暟瀛︹�濄�傝娉ㄦ剰锛屽鏋滃悜 div 鑷韩娣诲姞浠讳綍渚ц竟濉厖鎴栬竟妗嗭紝杩欎簺渚ц竟濉厖鎴栬竟妗嗗皢涓庢偍瀹氫箟鐨勫搴︾浉鍔狅紝寰楀嚭 *鎬昏* 瀹藉害銆傛偍涔熷彲浠ラ�夋嫨鍒犻櫎 div 涓殑鍏冪礌鐨勫～鍏咃紝骞跺湪璇ュ厓绱犱腑鍙﹀鏀剧疆涓�涓病鏈変换浣曞搴︿絾鍏锋湁璁捐鎵�闇�濉厖鐨� div銆�
+
+2) 鐢变簬杩欎簺鍒楀潎涓烘诞鍔ㄥ垪锛屽洜姝ゆ湭瀵瑰叾鎸囧畾杈硅窛銆傚鏋滃繀椤绘坊鍔犺竟璺濓紝璇烽伩鍏嶅湪娴姩鏂瑰悜涓�渚ф斁缃竟璺濓紙渚嬪锛歞iv 涓殑鍙宠竟璺濊缃负鍚戝彸娴姩锛夈�傚湪寰堝鎯呭喌涓嬶紝閮藉彲浠ユ敼鐢ㄥ～鍏呫�傚浜庡繀椤绘墦鐮存瑙勫垯鐨� div锛屽簲鍚戣 div 鐨勮鍒欎腑娣诲姞鈥渄isplay:inline鈥濆０鏄庯紝浠ユ帶鍒舵煇浜涚増鏈殑 Internet Explorer 浼氫娇杈硅窛缈诲�嶇殑閿欒銆�
+
+3) 鐢变簬鍙互鍦ㄤ竴涓枃妗ｄ腑澶氭浣跨敤绫伙紙骞朵笖涓�涓厓绱犲彲浠ュ簲鐢ㄥ涓被锛夛紝鍥犳宸插悜杩欎簺鍒楀垎閰嶇被鍚嶏紝鑰屼笉鏄� ID銆備緥濡傦紝蹇呰鏃跺彲鍫嗗彔涓や釜渚ф爮 div銆傛偍鍙互鏍规嵁涓汉鍋忓ソ灏嗚繖浜涘悕绉拌交鏉惧湴鏀逛负 ID锛屽墠鎻愭槸浠呭姣忎釜鏂囨。浣跨敤涓�娆°��
+
+4) 濡傛灉鎮ㄦ洿鍠滄鍦ㄥ彸渚э紙鑰屼笉鏄乏渚э級杩涜瀵艰埅锛屽彧闇�浣胯繖浜涘垪鍚戠浉鍙嶆柟鍚戞诞鍔紙鍏ㄩ儴鍚戝彸锛岃�岄潪鍏ㄩ儴鍚戝乏锛夛紝瀹冧滑灏嗘寜鐩稿弽椤哄簭鏄剧ず銆傛偍鏃犻渶鍦� HTML 婧愭枃浠朵腑绉诲姩 div銆�
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 10px;
+	width: 600px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding: 10px 0;
+}
+
+/* ~~ 姝ゅ垎缁勭殑閫夋嫨鍣ㄤ负 .content 鍖哄煙涓殑鍒楄〃鎻愪緵浜嗙┖闂� ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* 姝ゅ～鍏呭弽鏄犱笂杩版爣棰樺拰娈佃惤瑙勫垯涓殑鍙冲～鍏呫�傚～鍏呮斁缃簬涓嬫柟鍙敤浜庨棿闅斿垪琛ㄤ腑鍏跺畠鍏冪礌锛岀疆浜庡乏渚у彲鐢ㄤ簬鍒涘缓缂╄繘銆傛偍鍙互鏍规嵁闇�瑕佽繘琛岃皟鏁淬�� */
+}
+
+ul.locationNav{
+	list-style:none;
+}
+ul.locationNav li{
+	margin:10px;
+}
+/* ~~ 瀵艰埅鍒楄〃鏍峰紡锛堝鏋滈�夋嫨浣跨敤棰勫厛鍒涘缓鐨� Spry 绛夊脊鍑鸿彍鍗曪紝鍒欏彲浠ュ垹闄ゆ鏍峰紡锛� ~~ */
+ul.nav {
+	list-style: none; /* 杩欏皢鍒犻櫎鍒楄〃鏍囪 */
+	border-top: 1px solid #666; /* 杩欏皢涓洪摼鎺ュ垱寤轰笂杈规 鈥� 浣跨敤涓嬭竟妗嗗皢鎵�鏈夊叾瀹冮」鏀剧疆鍦� LI 涓� */
+	margin-bottom: 15px; /* 杩欏皢鍦ㄤ笅闈㈠唴瀹圭殑瀵艰埅涔嬮棿鍒涘缓闂磋窛 */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* 杩欏皢鍒涘缓鎸夐挳闂撮殧 */
+}
+ul.nav a, ul.nav a:visited { /* 瀵硅繖浜涢�夋嫨鍣ㄨ繘琛屽垎缁勫彲纭繚閾炬帴鍗充娇鍦ㄨ闂箣鍚庝篃鑳戒繚鎸佸叾鎸夐挳澶栬 */
+	padding: 5px 5px 5px 15px;
+	display: block; /* 杩欏皢涓洪敋璁拌祴浜堝潡灞炴�э紝浣垮叾濉弧鍖呭惈瀹冪殑鏁翠釜 LI銆傝繖鏍凤紝鏁翠釜鍖哄煙閮藉彲浠ュ搷搴旈紶鏍囧崟鍑绘搷浣溿�� */
+	text-decoration: none;
+	background-color: #00F;
+	color: white;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* 杩欏皢鏇存敼榧犳爣鍜岄敭鐩樺鑸殑鑳屾櫙鍜屾枃鏈鑹� */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ 鑴氭敞鏍峰紡 ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #0000FF;
+	text-align:center;
+	color:white;
+	position: relative;/* 杩欏彲浠ヤ娇 IE6 hasLayout 浠ユ纭柟寮忚繘琛屾竻闄� */
+	clear: both; /* 姝ゆ竻闄ゅ睘鎬у己鍒� .container 浜嗚В鍒楃殑缁撴潫浣嶇疆浠ュ強鍖呭惈鍒楃殑浣嶇疆 */
+}
+
+/* ~~ 鍏跺畠娴姩/娓呴櫎绫� ~~ */
+.fltrt {  /* 姝ょ被鍙敤浜庡湪椤甸潰涓娇鍏冪礌鍚戝彸娴姩銆傛诞鍔ㄥ厓绱犲繀椤讳綅浜庡叾鍦ㄩ〉闈笂鐨勭浉閭诲厓绱犱箣鍓嶃�� */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 姝ょ被鍙敤浜庡湪椤甸潰涓娇鍏冪礌鍚戝乏娴姩銆傛诞鍔ㄥ厓绱犲繀椤讳綅浜庡叾鍦ㄩ〉闈笂鐨勭浉閭诲厓绱犱箣鍓嶃�� */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* 濡傛灉浠� .container 涓垹闄ゆ垨绉诲嚭浜� .footer锛屽垯鍙互灏嗘绫绘斁缃湪 <br /> 鎴栫┖ div 涓紝浣滀负 .container 鍐呮渶鍚庝竴涓诞鍔� div 涔嬪悗鐨勬渶缁堝厓绱� */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+ul.locationNav{
+	float:left;
+	list-style:none;
+}
+ul.locationNav li{
+	display:inline;
+	margin:5px,10px;
+}
+div.fileControls{
+	float:right;
+}
+div.navBar{
+	background-color:blue;
+	color:white;
+}
+div.navBar::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+div#userInfo{
+	float:right;
+	width:5em;
+	margin:5px 10px 5px 0;
+}
